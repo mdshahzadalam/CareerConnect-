@@ -1,7 +1,8 @@
 import { useState } from "react";
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion"; // 👈 for smooth animation
+import { motion, AnimatePresence } from "framer-motion"; // 👈 smooth animation
 
+// ✅ Updated FAQs with ₹199 registration fee questions
 const faqs = [
   {
     question: "How do I apply for a job?",
@@ -18,19 +19,56 @@ const faqs = [
   {
     question: "How can I create an account?",
     answer:
-      'Click "Sign Up" at the top right. You can sign up with email, Google, or LinkedIn. Then verify your email.',
+      'Click "Sign Up" at the top right. You can register with Email, Google, or LinkedIn. Then verify your email to activate your account.',
   },
   {
-    question: "Is there a fee to use CareerConnect Pro?",
+    question: "Is there a fee to register?",
     answer:
-      "No, it's completely free for job seekers. Employers may pay to post jobs depending on their plan.",
+      "Yes, there is a small one-time registration fee of ₹199. This helps us verify genuine candidates and maintain quality job postings.",
+  },
+  {
+    question: "Why do I need to pay ₹199?",
+    answer: (
+      <p>
+        The ₹199 registration fee is required to keep the platform secure and spam-free. 
+        It ensures that only serious job seekers update their profiles and apply for jobs. 
+        Once paid, you will unlock full access to apply for jobs and update your profile anytime.
+      </p>
+    ),
+  },
+  {
+    question: "How do I pay the ₹199 registration fee?",
+    answer: (
+      <ul className="list-disc list-inside space-y-2">
+        <li>Go to your Profile → Registration section</li>
+        <li>Click on <b>"Pay Now"</b></li>
+        <li>Complete the payment securely via UPI, Debit/Credit Card, or Net Banking</li>
+        <li>After payment, your account will be activated instantly</li>
+      </ul>
+    ),
   },
   {
     question: "How do I update my profile information?",
     answer:
-      'Log in → Profile menu → "My Profile". Edit your info and save changes.',
+      'Log in → Profile menu → "My Profile". Edit your info and save changes anytime.',
   },
-  // ... keep rest of your FAQ data
+  {
+    question: "Can employers post jobs for free?",
+    answer:
+      "Employers can post a limited number of free jobs. For premium visibility and unlimited postings, they can upgrade to a paid plan.",
+  },
+  {
+    question: "I need help, how can I contact support?",
+    answer: (
+      <p>
+        You can reach out anytime through our{" "}
+        <a href="/contact" className="text-indigo-600 font-medium hover:text-indigo-500">
+          Contact Support
+        </a>{" "}
+        page. Our team will assist you quickly.
+      </p>
+    ),
+  },
 ];
 
 const FAQItem = ({ question, answer, isOpen, onClick }) => {

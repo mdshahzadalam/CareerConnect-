@@ -153,12 +153,27 @@ const Home = () => {
           <p className="mt-4 text-lg leading-6 text-indigo-200">
             Join thousands of professionals who found their perfect job match with us.
           </p>
-          <Link
+          {/* <Link
             to="/jobs"
             className="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto"
           >
             Browse Jobs
-          </Link>
+          </Link> */}
+
+          <div className="mt-3 sm:mt-0 sm:ml-3 relative group">
+            <a
+              href="https://forms.gle/rTAfeuxP8nMUsNEb8"
+              className="relative w-full flex items-center justify-center 
+               px-8 py-3 md:px-10 md:py-4
+               text-base md:text-lg font-semibold tracking-wide
+               text-black bg-white rounded-xl shadow-lg
+               hover:bg-gray-100 transition-all duration-300
+               overflow-hidden z-10"
+            >
+              Register For Job
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
@@ -166,3 +181,4 @@ const Home = () => {
 };
 
 export default Home;
+

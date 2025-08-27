@@ -3,6 +3,7 @@ import React from 'react';
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Banner from '../components/Banner';
 
 // Mock data - This will be replaced with actual API calls
 const mockJobs = [
@@ -61,7 +62,11 @@ const mockJobs = [
 
 const JobCard = ({ job, onApply }) => {
   return (
+
+
     <div className="bg-white shadow overflow-hidden sm:rounded-lg mb-6">
+
+
       <div className="px-4 py-5 sm:px-6">
         <div className="flex justify-between items-start">
           <div>
@@ -100,11 +105,11 @@ const JobCard = ({ job, onApply }) => {
             Apply Now
           </button> */}
           <Link
-  to="/jobapplicationform"
-  className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
->
-  Apply Now
-</Link>
+            to="https://forms.gle/rTAfeuxP8nMUsNEb8"
+            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            Apply Now
+          </Link>
         </div>
       </div>
     </div>
@@ -124,7 +129,7 @@ const JobDetail = ({ job, onBack, onApply }) => {
           </svg>
           Back to Jobs
         </button>
-        
+
         <div className="flex justify-between items-start">
           <div>
             <h2 className="text-2xl font-bold text-gray-900">{job.title}</h2>
@@ -149,7 +154,7 @@ const JobDetail = ({ job, onBack, onApply }) => {
           <h3 className="text-lg font-medium text-gray-900">Job Description</h3>
           <div className="mt-4 text-gray-700 space-y-4">
             <p>{job.description}</p>
-            
+
             <div>
               <h4 className="font-medium text-gray-900">Responsibilities:</h4>
               <ul className="list-disc list-inside mt-2 space-y-1">
@@ -211,7 +216,7 @@ const Jobs = () => {
         // In a real app, you would fetch data from your backend
         // const response = await fetch('/api/jobs');
         // const data = await response.json();
-        
+
         // Using mock data for now
         setTimeout(() => {
           setJobs(mockJobs);
@@ -227,19 +232,19 @@ const Jobs = () => {
   }, []);
 
   const filteredJobs = jobs.filter(job => {
-    const matchesSearch = 
+    const matchesSearch =
       job.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       job.company.toLowerCase().includes(searchTerm.toLowerCase()) ||
       job.description.toLowerCase().includes(searchTerm.toLowerCase());
-    
-    const matchesLocation = 
-      !locationFilter || 
+
+    const matchesLocation =
+      !locationFilter ||
       job.location.toLowerCase().includes(locationFilter.toLowerCase());
-    
-    const matchesJobType = 
-      jobTypeFilter === 'all' || 
+
+    const matchesJobType =
+      jobTypeFilter === 'all' ||
       job.type.toLowerCase() === jobTypeFilter.toLowerCase();
-    
+
     return matchesSearch && matchesLocation && matchesJobType;
   });
 
@@ -272,10 +277,10 @@ const Jobs = () => {
   if (selectedJob) {
     return (
       <div className="max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-        <JobDetail 
-          job={selectedJob} 
-          onBack={handleBackToList} 
-          onApply={handleApply} 
+        <JobDetail
+          job={selectedJob}
+          onBack={handleBackToList}
+          onApply={handleApply}
         />
       </div>
     );
@@ -312,7 +317,7 @@ const Jobs = () => {
               </div>
             </div>
           </div>
-          
+
           <div>
             <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-1">
               Where
@@ -329,7 +334,7 @@ const Jobs = () => {
               />
             </div>
           </div>
-          
+
           <div>
             <label htmlFor="job-type" className="block text-sm font-medium text-gray-700 mb-1">
               Job Type
@@ -372,10 +377,10 @@ const Jobs = () => {
         {filteredJobs.length > 0 ? (
           <div className="space-y-4">
             {filteredJobs.map(job => (
-              <JobCard 
-                key={job.id} 
-                job={job} 
-                onApply={handleApply} 
+              <JobCard
+                key={job.id}
+                job={job}
+                onApply={handleApply}
               />
             ))}
           </div>

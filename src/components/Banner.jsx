@@ -27,14 +27,30 @@ const Banner = () => {
               Browse Jobs
             </a>
           </div>
-          <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+          {/* <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
             <a
               href="/post-job"
               className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-500 bg-opacity-90 hover:bg-opacity-100 md:py-4 md:text-lg md:px-10"
             >
-              Post a Job
+              Registration Form
+            </a>
+          </div> */}
+
+          <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 relative group">
+            <a
+              href="https://forms.gle/rTAfeuxP8nMUsNEb8"
+              className="relative w-full flex items-center justify-center px-8 py-3 
+               text-base font-medium rounded-md text-white 
+               bg-indigo-500 bg-opacity-90 hover:bg-opacity-100 
+               md:py-4 md:text-lg md:px-10
+               overflow-hidden z-10"
+            >
+              Registration Form
             </a>
           </div>
+
+
+
         </div>
       </div>
     </div>

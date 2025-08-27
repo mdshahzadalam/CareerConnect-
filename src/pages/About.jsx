@@ -73,20 +73,28 @@ const About = () => {
               <div className="mt-8 lg:mt-0">
                 <div className="text-base max-w-prose mx-auto lg:max-w-none">
                   <p className="text-lg text-gray-500">
-                    Founded in 2023, CareerConnect Pro was born out of a simple idea: to make job searching and hiring more efficient, transparent, and human.
-                    Our team of passionate professionals came together with a shared vision to transform the job market by leveraging technology and data.
+                    At <span className="font-semibold text-indigo-600">CareerConnectPro</span>, our mission is simple yet powerful:
+                    to provide better opportunities and make job searching more efficient, transparent, and accessible across every field.
+                    Since our launch in 2023, we’ve been dedicated to bridging the gap between talented professionals and forward-thinking employers.
                   </p>
                 </div>
                 <div className="mt-5 prose prose-indigo text-gray-500 mx-auto lg:max-w-none lg:row-start-1 lg:col-start-1">
                   <p>
-                    We noticed that traditional job boards were outdated and inefficient, often leaving both job seekers and employers frustrated. 
-                    That's why we built a platform that uses advanced matching algorithms to connect the right candidates with the right opportunities.
+                    We understand that traditional job portals can often feel overwhelming and outdated.
+                    That’s why we built a smarter platform powered by advanced technology and data-driven insights—
+                    ensuring the right candidates connect with the right opportunities faster and more effectively.
                   </p>
                   <p>
-                    Today, we're proud to serve thousands of job seekers and employers across various industries, helping them achieve their career and business goals.
+                    Whether you’re a job seeker exploring your next big career move or an employer searching for top talent,
+                    CareerConnectPro is here to make the process seamless and rewarding. Together, we’re reshaping the way people find jobs
+                    and helping businesses grow with the right talent in every industry.
+                  </p>
+                  <p>
+                    Join thousands of professionals and organizations who trust us to turn career goals into success stories.
                   </p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

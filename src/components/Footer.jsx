@@ -13,26 +13,26 @@ const Footer = () => {
               Connecting talented professionals with top employers worldwide.
             </p>
           </div>
-          
+
           <div>
             <h4 className="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4">For Job Seekers</h4>
             <ul className="space-y-2">
               <li><Link to="/jobs" className="text-gray-300 hover:text-white text-sm">Browse Jobs</Link></li>
-              <li><Link to="/resume-builder" className="text-gray-300 hover:text-white text-sm">Create Resume</Link></li>
+              {/* <li><Link to="/resume-builder" className="text-gray-300 hover:text-white text-sm">Create Resume</Link></li> */}
               <li><Link to="/career-advice" className="text-gray-300 hover:text-white text-sm">Career Advice</Link></li>
-              <li><Link to="/job-alerts" className="text-gray-300 hover:text-white text-sm">Job Alerts</Link></li>
+              {/* <li><Link to="/job-alerts" className="text-gray-300 hover:text-white text-sm">Job Alerts</Link></li> */}
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4">For Employers</h4>
             <ul className="space-y-2">
-              <li><Link to="/post-job" className="text-gray-300 hover:text-white text-sm">Post a Job</Link></li>
+              <li><Link to="/post-job" className="text-gray-300 hover:text-white text-sm">Register for a Job</Link></li>
               <li><Link to="/pricing" className="text-gray-300 hover:text-white text-sm">Pricing</Link></li>
-              <li><Link to="/employer-dashboard" className="text-gray-300 hover:text-white text-sm">Employer Dashboard</Link></li>
+              {/* <li><Link to="/employer-dashboard" className="text-gray-300 hover:text-white text-sm">Employer Dashboard</Link></li> */}
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4">Company</h4>
             <ul className="space-y-2">
@@ -44,7 +44,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
             &copy; {new Date().getFullYear()} CareerConnect Pro. All rights reserved.
@@ -70,6 +70,22 @@ const Footer = () => {
             </a>
           </div>
         </div>
+        <div className="mt-12 border-t border-gray-700 pt-8 flex justify-center items-center">
+          <div className="text-xs text-neutral-500 text-center">
+            <p>
+              Made with ❤️ by{" "}
+              <a
+                href="https://www.linkedin.com/in/mdshahzadalam"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-400 hover:text-white transition-colors"
+              >
+                Shahzad
+              </a>
+            </p>
+          </div>
+        </div>
+
       </div>
     </footer>
   );
