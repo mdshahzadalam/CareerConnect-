@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="lg:text-center">
-        <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">About Us</h2>
+        <h2 className=" text-3xl font-extrabold text-indigo-600  tracking-wide uppercase">About Us</h2>
         <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
           Connecting Talent with Opportunity
         </p>
@@ -48,7 +48,7 @@ const About = () => {
             <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen"></div>
             <div className="mx-auto text-base max-w-prose lg:grid lg:grid-cols-2 lg:gap-8 lg:max-w-none">
               <div>
-                <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Our Story</h2>
+                <h2 className="text-3xl text-indigo-600 font-extrabold tracking-wide uppercase">Our Story</h2>
                 <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                   How we got started
                 </h3>
@@ -104,7 +104,7 @@ const About = () => {
       <div className="bg-white py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Our Team</h2>
+            <h2 className="text-3xl text-indigo-600 font-extrabold tracking-wide uppercase">Our Team</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Meet our leadership
             </p>
@@ -163,7 +163,7 @@ const About = () => {
       <div className="bg-gray-50 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">Values</h2>
+            <h2 className="text-3xl text-indigo-600 font-extrabold tracking-wide uppercase">Values</h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               What we stand for
             </p>

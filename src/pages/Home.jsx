@@ -162,7 +162,7 @@ const Home = () => {
 
           <div className="mt-3 sm:mt-0 sm:ml-3 relative group">
             <a
-              href="https://forms.gle/rTAfeuxP8nMUsNEb8"
+              href="https://forms.gle/GASetkB1MT1vyLhB6"
               className="relative w-full flex items-center justify-center 
                px-8 py-3 md:px-10 md:py-4
                text-base md:text-lg font-semibold tracking-wide

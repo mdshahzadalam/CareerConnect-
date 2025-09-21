@@ -78,7 +78,7 @@ const Contact = () => {
 
       axios
         .post(
-          "https://api.sheetbest.com/sheets/9302cdac-e5ca-4b88-bbd8-6a31f8f49ac9",
+          "https://sheetdb.io/api/v1/7zf28r2okvrt8",
           data
         )
         .then((response) => {

@@ -105,7 +105,7 @@ const JobCard = ({ job, onApply }) => {
             Apply Now
           </button> */}
           <Link
-            to="https://forms.gle/rTAfeuxP8nMUsNEb8"
+            to="https://forms.gle/GASetkB1MT1vyLhB6"
             className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             Apply Now
